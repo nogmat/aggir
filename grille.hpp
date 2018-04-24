@@ -47,7 +47,6 @@ namespace Grille {
 
   const int NOMBRE_GIR = 6;
 
-  int* valeurs[NOMBRE_CLASSE][NOMBRE_MODALITE];
   int rangs[NOMBRE_RANG][2] = {{ClasseA,4380},
 			       {ClasseA,4140},
 			       {ClasseA,3390},
@@ -61,90 +60,52 @@ namespace Grille {
 			       {ClasseH,4000},
 			       {ClasseH,2000},
 			       {ClasseH,0}};
+  
   int gir[NOMBRE_GIR] = {0, 6, 8, 10, 11, 12};
 
-  void initialiserGrille(){
-
-    for(int i = 0 ; i < NOMBRE_CLASSE ; i++){
-      int colonne[NOMBRE_VARIABLE] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-      valeurs[i][ModaliteA] = colonne;
-    }
-    // Classe A
+  int valeurs[NOMBRE_CLASSE][NOMBRE_MODALITE][NOMBRE_VARIABLE] =
     {
-      int colonne[NOMBRE_VARIABLE] = {0, 0, 16, 16, 20, 16, 120, 32, 0, 0};
-      valeurs[ClasseA][ModaliteB] = colonne;
-    }
-    {
-      int colonne[NOMBRE_VARIABLE] = {2000, 1200, 40, 40, 60, 100, 800, 200, 0, 0};
-      valeurs[ClasseA][ModaliteC] = colonne;
-    }
-    //Classe B
-    {
-      int colonne[NOMBRE_VARIABLE] = {320, 120, 16, 16, 0, 16, 120, -40, 0, 0};
-      valeurs[ClasseB][ModaliteB] = colonne;
-    }
-    { 
-      int colonne[NOMBRE_VARIABLE] = {1500, 1200, 40, 40, 60, 100, 800, -80, 0, 0};
-      valeurs[ClasseB][ModaliteC] = colonne;
-    }
-    //Classe C
-    {
-      int colonne[NOMBRE_VARIABLE] = {0, 0, 16, 16, 20, 20, 200, 40, 0, 0};
-      valeurs[ClasseC][ModaliteB] = colonne;
-    }
-    {
-      int colonne[NOMBRE_VARIABLE] = {0, 0, 40, 40, 60, 160, 1000, 400, 0, 0};
-      valeurs[ClasseC][ModaliteC] = colonne;
-    }
-    //Classe D
-    {
-      int colonne[NOMBRE_VARIABLE] = {0, 0, 0, 0, 200, 200, 200, 0, 0, 0};
-      valeurs[ClasseD][ModaliteB] = colonne;
-    }
-    {
-      int colonne[NOMBRE_VARIABLE] = {0, 0, 0, 0, 2000, 400, 2000, 200, 0, 0};
-      valeurs[ClasseD][ModaliteC] = colonne;
-    }
-    //Classe E
-    {
-      int colonne[NOMBRE_VARIABLE] = {0, 0, 100, 100, 100, 100, 100, 0, 0, 0};
-      valeurs[ClasseE][ModaliteB] = colonne;
-    }
-    {
-      int colonne[NOMBRE_VARIABLE] = {400, 400, 400, 400, 400, 800, 800, 200, 0, 0};
-      valeurs[ClasseE][ModaliteC] = colonne;
-    }
-    //Classe F
-    {
-      int colonne[NOMBRE_VARIABLE] = {0, 100, 100, 100, 100, 100, 100, 0, 0, 0};
-      valeurs[ClasseF][ModaliteB] = colonne;
-    }
-    {
-      int colonne[NOMBRE_VARIABLE] = {200, 200, 500, 500, 500, 500, 500, 500, 200, 0};
-      valeurs[ClasseF][ModaliteC] = colonne;
-    }
-    //Classe G
-    {
-      int colonne[NOMBRE_VARIABLE] = {0, 0, 200, 200, 200, 200, 200, 100, 0, 0};
-      valeurs[ClasseG][ModaliteB] = colonne;
-    }
-    {
-      int colonne[NOMBRE_VARIABLE] = {150, 150, 300, 300, 500, 500, 400, 200, 0, 0
-      };
-      valeurs[ClasseG][ModaliteC] = colonne;
-    }
-    //Classe H
-    {
-      int colonne[NOMBRE_VARIABLE] = {0, 0, 2000, 2000, 2000, 2000, 2000, 1000, 0, 0};
-      valeurs[ClasseH][ModaliteB] = colonne;
-    }
-    {
-      int colonne[NOMBRE_VARIABLE] = {0, 0, 3000, 3000, 3000, 3000, 1000, 1000, 0, 0};
-      valeurs[ClasseH][ModaliteC] = colonne;
-    }
-
-    
-  }
+      {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 16, 16, 20, 16, 120, 32, 0, 0},
+	{2000, 1200, 40, 40, 60, 100, 800, 200, 0, 0}
+      },
+      {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{320, 120, 16, 16, 0, 16, 120, -40, 0, 0},
+	{1500, 1200, 40, 40, 60, 100, 800, -80, 0, 0}
+      },
+      {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 16, 16, 20, 20, 200, 40, 0, 0},
+	{0, 0, 40, 40, 60, 160, 1000, 400, 0, 0}
+      },
+      {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 200, 200, 200, 0, 0, 0},
+	{0, 0, 0, 0, 2000, 400, 2000, 200, 0, 0}
+      },
+      {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 100, 100, 100, 100, 100, 0, 0, 0},
+	{400, 400, 400, 400, 400, 800, 800, 200, 0, 0}
+      },
+      {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 100, 100, 100, 100, 100, 100, 0, 0, 0},
+	{200, 200, 500, 500, 500, 500, 500, 500, 200, 0}
+      },
+      {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 200, 200, 200, 200, 200, 100, 0, 0},
+	{150, 150, 300, 300, 500, 500, 400, 200, 0, 0}
+      },
+      {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 2000, 2000, 2000, 2000, 2000, 1000, 0, 0},
+	{0, 0, 3000, 3000, 3000, 3000, 1000, 1000, 0, 0}
+      }
+    };
 
 };
 

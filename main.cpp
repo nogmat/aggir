@@ -98,12 +98,11 @@ int main(int argc, char** argv){
   resultat.pack_end(boutonCalcul);
   boutonCalcul.signal_clicked().connect(sigc::ptr_fun(&calcul));
 
-  Grille::initialiserGrille();
-
   fenetre.show_all();
   
   Gtk::Main::run(fenetre);
   return 0;
+
 }
 
 void configurerComboBox(Gtk::ComboBoxText &combo){
@@ -115,28 +114,31 @@ void configurerComboBox(Gtk::ComboBoxText &combo){
 
 void calcul(){
 
-  cout << "Calcul activé" << endl;
   for(int i = 0 ; i < Grille::NOMBRE_RANG ; i++){
+
     if(Grille::rangs[i][1] <= calculSomme(Grille::rangs[i][0])){
       chaineGIR.clear();
       chaineGIR += ((char) 48 + calculGIR(i));
       gir->set_text(chaineGIR);
       break;
     }
+
   }
 
 }
 
 int calculSomme(int c){
+
   int somme = 0;
   for(int i = 0 ; i < Grille::NOMBRE_VARIABLE ; i++){
     somme += Grille::valeurs[c][calculModalite(i)][i];
   }
-  cout << somme << endl;
   return somme;
+
 }
 
 int calculModalite(int variable){
+
   if(choix[variable]->get_active_text() == string("Modalité B")){
     return Grille::ModaliteB;
   } else if(choix[variable]->get_active_text() == string("Modalité C")){
@@ -144,13 +146,16 @@ int calculModalite(int variable){
   } else {
     return Grille::ModaliteA;
   }
+
 }
 
 int calculGIR(int rang){
+
   for(int i = 0 ; i < Grille::NOMBRE_GIR ; i++){
     if(rang <= Grille::gir[i]){
       return i+1;
     }
   }
   return -1;
+
 }
