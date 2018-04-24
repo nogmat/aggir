@@ -40,7 +40,7 @@ Afin d'effectuer le calcul il est nécessaire de choisir une modalité pour chac
 
 ## Créé avec
 
-* [Emacs](https://www.gnu.org/software/emacs/) - L'éditeur de texte le plus utilisé.
+* [Emacs](https://www.gnu.org/software/emacs/) - Utilisé pour éditer le code source.
 * [Magit](https://magit.vc/manual/magit/) - Utilisé pour synchroniser les dépôts.
 
 ## Auteur
