@@ -1,6 +1,6 @@
 # AGGIR
 
-Ce programme permet de calculer le groupe iso-ressource d'un individu selon l'algorithme de la grille AGGIR publié dans l'annexe II du Décret n°97-427 du 28 avril 1997 et développé par le Syndicat national de gérontologie clinique de France.
+Ce programme permet de calculer le groupe iso-ressources d'un individu selon l'algorithme de la grille AGGIR publié dans l'annexe II du Décret n°97-427 du 28 avril 1997 et développé par le Syndicat national de gérontologie clinique de France.
 
 ## Pour commencer...
 
