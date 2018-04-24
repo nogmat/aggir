@@ -21,22 +21,22 @@ Ce programme propose de définir une modalité pour chacune des variables discri
 
 ### Codage des items
 
-    Modalité A : la personne fait seule et spontanément, habituellement, totalement et correctement
-    modalité B : la personne peut faire seule, mais ne le fait pas spontanément, ou/et correctement ou/et habituellement ou/et partiellement
-    modalité C : la personne ne fait pas, il faut faire à sa place ou faire faire par quelqu'un d'autre
+* Modalité A : la personne fait seule et spontanément, habituellement, totalement et correctement
+* Modalité B : la personne peut faire seule, mais ne le fait pas spontanément, ou/et correctement ou/et habituellement ou/et partiellement
+* Modalité C : la personne ne fait pas, il faut faire à sa place ou faire faire par quelqu'un d'autre
 
 ### Variables discrimantes
 
-    Cohérence : converser ou se comporter de façon logique et sensée 
-    Orientation : se repérer dans le temps, les moments de la journée et les lieux 
-    Toilette corporelle : comprend la toilette du haut (tête, tronc) et la toilette du bas 
-    Habillage : comprend l'habillage du haut, l'habillage moyen, et l'habillage du bas 
-    Alimentation : comprend le fait de servir et le fait de manger 
-    Élimination : correspond à la capacité de la personne à gérer l'hygiène de l'élimination et non la continence (élimination urinaire et élimination fécale )
-    Transferts : comprend le fait de se coucher, s'asseoir, se lever
-    Déplacements à l'intérieur : évalue si des moyens techniques sont nécessaires à l'intérieur
-    Déplacements à l'extérieur : évalue si des moyens techniques sont nécessaires à l'extérieur 
-    Communication à distance : utilisation d'un téléphone, d'une télé-alarme
+* Cohérence : converser ou se comporter de façon logique et sensée 
+* Orientation : se repérer dans le temps, les moments de la journée et les lieux 
+* Toilette corporelle : comprend la toilette du haut (tête, tronc) et la toilette du bas 
+* Habillage : comprend l'habillage du haut, l'habillage moyen, et l'habillage du bas 
+* Alimentation : comprend le fait de servir et le fait de manger 
+* Élimination : correspond à la capacité de la personne à gérer l'hygiène de l'élimination et non la continence (élimination urinaire et élimination fécale )
+* Transferts : comprend le fait de se coucher, s'asseoir, se lever
+* Déplacements à l'intérieur : évalue si des moyens techniques sont nécessaires à l'intérieur
+* Déplacements à l'extérieur : évalue si des moyens techniques sont nécessaires à l'extérieur 
+* Communication à distance : utilisation d'un téléphone, d'une télé-alarme
 
 ## Créé avec
 
