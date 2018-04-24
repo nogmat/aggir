@@ -17,7 +17,7 @@ apt install libgtkmm-3.0-dev
 
 ## Fonction du programme
 
-Ce programme propose de définir une modalité pour chacune des variables discriminantes.
+Afin d'effectuer le calcul il est nécessaire de choisir une modalité pour chacune des variables discriminantes.
 
 ### Codage des items
 
