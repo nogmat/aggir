@@ -45,7 +45,7 @@ Afin d'effectuer le calcul il est nécessaire de choisir une modalité pour chac
 
 ## Auteur
 
-* **Matthieu Nogatchewsky** - [Nogzer](https://github.com/nogzer)
+* [Nogzer](https://github.com/nogzer)
 
 ## Licence
 
